@@ -21,14 +21,14 @@ public class SinParticle implements CommandExecutor {
         new BukkitRunnable() {
             @Override
             public void run() {
-                for(double x = -3; x <= 3; x += 0.1) {
-                    for (double z = -3; z <= 3; z += 0.1) {
+                for(double x = -5; x <= 5; x += 0.1) {
+                    for (double z = -5; z <= 5; z += 0.1) {
                         double height = noise.noise(x, z);
                         Location cosLocation = new Location(
                                 pLocation.getWorld(),
-                                pLocation.getX() - 3 + x,
-                                pLocation.getY() + height,
-                                pLocation.getZ() - 3 + z
+                                pLocation.getX() - 5 + x,
+                                pLocation.getY() + height * 2,
+                                pLocation.getZ() - 5 + z
                         );
 
                         player.getWorld().spawnParticle(
