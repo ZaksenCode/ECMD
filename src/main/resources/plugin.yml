@@ -1,0 +1,12 @@
+name: ECMD
+version: '${project.version}'
+main: org.zaksen.ecmd.ECMD
+api-version: '1.20'
+authors: [Zaksen_]
+
+commands:
+  partl:
+    description: spawn particle
+
+  partl_sin:
+    description: spawn sin particles
